@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update user</title>
+</head>
+<body>
+    <h1>Update Item</h1>
+    <form method="post">
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" value="{{ user.username }}" required>
+        <br>
+        <label for="email">Email:</label>
+        <textarea id="email" name="email" required>{{ user.email }}</textarea>
+        <br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
